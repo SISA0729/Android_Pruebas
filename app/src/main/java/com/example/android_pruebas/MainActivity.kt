@@ -32,24 +32,24 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ){
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(Color.Cyan),
+                    contentAlignment = Alignment.Center
+                ) {
                     Box(
                         modifier = Modifier
-                            .fillMaxSize()
-                            .background(Color.Cyan),
+                            .background(Color.Blue)
+                            .padding(20.dp),
                         contentAlignment = Alignment.Center
                     ) {
-                        Box(
-                            modifier = Modifier
-                                .background(Color.Blue)
-                                .padding(20.dp),
-                            contentAlignment = Alignment.Center
-                        ) {
-                            Text(
-                                text = "SISA",
-                                color = Color.White,
-                                fontSize = 20.sp
-                            )
-                        }
+                        Text(
+                            text = "SISA",
+                            color = Color.White,
+                            fontSize = 20.sp
+                        )
                     }
                 }
             }
